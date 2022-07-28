@@ -1,0 +1,348 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Gelasio';
+  font-size: 22px;
+}
+
+body .navbar {
+  background-color: white;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 9999;
+}
+
+body .navbar .img {
+  height: 75%;
+  position: absolute;
+  left: 10px;
+}
+
+body .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+body .navbar ul li, body .navbar ul a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+body .navbar ul a:after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  background-color: black;
+  height: 2px;
+  width: 0%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+body .navbar ul a:hover::after {
+  width: 100%;
+}
+
+.accueil {
+  height: 94vh;
+  background: -webkit-gradient(linear, left top, right top, from(#ffead1), to(#e8b7a0));
+  background: linear-gradient(90deg, #ffead1 0%, #e8b7a0 100%);
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.accueil #particles-js {
+  z-index: 20;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.accueil .face {
+  position: absolute;
+  height: 85%;
+  bottom: 0;
+  right: 6%;
+  z-index: 0;
+}
+
+.accueil .fleur {
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 55%;
+  left: 10%;
+  opacity: .5;
+}
+
+.accueil .context {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  width: 40%;
+  left: 20%;
+  z-index: 40;
+}
+
+.accueil .context .title {
+  color: #cd5a50;
+  font-size: 13vh;
+  font-family: 'Playfair Display SC';
+}
+
+.accueil .context .subtitle {
+  font-style: italic;
+  font-size: 2.9vh;
+  margin-top: -2vh;
+  color: #3f3f3f;
+}
+
+.accueil .context .text {
+  color: #3f3f3f;
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-size: 2.8vh;
+  margin-top: 6vh;
+  font-weight: 900;
+  width: 80%;
+}
+
+.accueil .context .btn {
+  margin-top: 10vh;
+  background-color: black;
+  color: #fff;
+  padding: 20px 30px;
+  width: 20%;
+  font-family: 'Montserrat';
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accueil .context .btn .flech {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  right: 15%;
+}
+
+.accueil .context .btn:hover .flech {
+  right: 10%  !important;
+}
+
+.accueil .context .btn:hover {
+  cursor: pointer;
+}
+
+.services {
+  height: 90vh;
+  background-color: white;
+  position: relative;
+}
+
+.services .anchor {
+  top: -6vh;
+  position: absolute;
+}
+
+.services .title {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.5vh;
+  padding-bottom: 5vh;
+}
+
+.services .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0vh 7vw;
+}
+
+.services .photos .carre {
+  height: 35vh;
+  width: 35vh;
+  background-color: #f4ded2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .photos .carre .imgsupport {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.services .photos .carre .imgsupport .prix {
+  background-color: #f4ded2;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Montserrat';
+}
+
+.services .photos .carre .imgsupport .prix ul {
+  padding: 0;
+  padding: 0 5%;
+}
+
+.services .photos .carre .imgsupport .prix li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 80%;
+  margin-bottom: 10px;
+}
+
+.services .photos .carre .imgsupport:hover .prix {
+  bottom: 0;
+}
+
+.services .photos .carre img {
+  height: 80%;
+  width: 80%;
+  opacity: .7;
+}
+
+.services .photos .carre .txt {
+  position: absolute;
+  bottom: -2.5vh;
+  right: -2vw;
+  font-size: 6vh;
+  font-family: "Dancing Script";
+}
+
+.services .trait {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  width: 60%;
+  background-color: black;
+  opacity: .4;
+}
+
+.apropos {
+  height: 80vh;
+  background-color: #f3d1b8;
+  margin-top: 17vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.apropos .anchor {
+  top: -6vh;
+  position: absolute;
+}
+
+.apropos .grostitre {
+  color: #cd5a50;
+  font-size: 16vh;
+  font-family: 'Playfair Display SC';
+  position: absolute;
+  top: -18vh;
+  left: -2vw;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.contact {
+  height: 80vh;
+  background-color: white;
+  position: relative;
+}
+
+.contact .anchor {
+  top: -6vh;
+  position: absolute;
+}
+
+@media screen and (max-width: 1800px) {
+  .navbar {
+    height: 10vh !important;
+  }
+  .btn {
+    margin-top: 10vh;
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px 20px !important;
+    width: 26% !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    background-color: red !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

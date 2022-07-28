@@ -1,0 +1,302 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: 'Gelasio';
+  font-size: 22px;
+
+
+  .navbar {
+    background-color: white;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    z-index: 9999;
+
+
+    .img {
+      height: 75%;
+      position: absolute;
+      left: 10px;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      width: 60%;
+
+      li, a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+      }
+
+      a:after {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        background-color: black;
+        height: 2px;
+        width: 0%;
+        transition: .4s;
+      }
+
+      a:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.accueil {
+  height: 94vh;
+  background: linear-gradient(90deg, rgba(255,234,209,1) 0%, rgba(232,183,160,1) 100%);
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+
+  #particles-js {
+    z-index: 20;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .face {
+    position: absolute;
+    height: 85%;
+    bottom: 0;
+    right: 6%;
+    z-index: 0;
+  }
+
+  .fleur {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    height: 55%;
+    left: 10%;
+    opacity: .5;
+  }
+
+  .context {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    width: 40%;
+    left: 20%;
+    z-index: 40;
+
+    .title {
+      color: #cd5a50;
+      font-size: 13vh;
+      font-family: 'Playfair Display SC';
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 2.9vh;
+      margin-top: -2vh;
+      color: rgb(63, 63, 63);
+    }
+
+    .text {
+      color: rgb(63, 63, 63);
+      font-family: 'Montserrat';
+      font-style: italic;
+      font-size: 2.8vh;
+      margin-top: 6vh;
+      font-weight: 900;
+      width: 80%;
+    }
+
+    .btn {
+      margin-top: 10vh;
+      background-color: black;
+      color: #fff;
+      padding: 20px 30px;
+      width: 20%;
+      font-family: 'Montserrat';
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .flech {
+        position: absolute;
+        transition: .3s;
+        right: 15%;
+      }
+    }
+    .btn:hover .flech {
+      right: 10%  !important;
+    }
+    .btn:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+.services {
+  height: 90vh;
+  background-color: white;
+  position: relative;
+
+  .anchor {
+    top: -6vh;
+    position: absolute;
+  }
+
+  .title {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5vh;
+    padding-bottom: 5vh;
+  }
+
+  .photos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0vh 7vw;
+
+    .carre {
+      height : 35vh;
+      width: 35vh;
+      background-color: #f4ded2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imgsupport {
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+
+        .prix {
+          background-color: #f4ded2;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          bottom: -100%;
+          transition: .5s;
+          font-family: 'Montserrat';
+
+          ul {
+            padding: 0;
+            padding: 0 5%;
+          }
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 80%;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .imgsupport:hover .prix {
+        bottom: 0;
+      }
+
+      img {
+        height: 80%;
+        width: 80%;
+        opacity: .7;
+      }
+
+      .txt {
+        position: absolute;
+        bottom: -2.5vh;
+        right: -2vw;
+        font-size: 6vh;
+        font-family: "Dancing Script";
+      }
+    }
+  }
+
+  .trait {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 60%;
+    background-color: black;
+    opacity: .4;
+  }
+}
+
+.apropos {
+  height: 80vh;
+  background-color: #f3d1b8;
+  margin-top: 17vh;
+  position: relative;
+  overflow: hidden;
+  
+  .anchor {
+    top: -6vh;
+    position: absolute;
+  }
+
+  .grostitre {
+    color: #cd5a50;
+    font-size: 16vh;
+    font-family: 'Playfair Display SC';
+    position: absolute;
+    top: -18vh;
+    left: -2vw;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+  }
+}
+
+.contact {
+  height: 80vh;
+  background-color: white;
+  position: relative;
+
+  .anchor {
+    top: -6vh;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .navbar {
+    height: 10vh !important;
+  }
+
+  .btn {
+    margin-top: 10vh;
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px 20px !important;
+    width: 26% !important;
+
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .navbar{
+    background-color: red !important;
+  }
+}
