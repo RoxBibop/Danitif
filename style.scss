@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   margin: 0;
@@ -123,7 +127,7 @@ body {
       background-color: black;
       color: #fff;
       padding: 20px 30px;
-      width: 20%;
+      width: 25%;
       font-family: 'Montserrat';
       position: relative;
       display: flex;
@@ -245,11 +249,14 @@ body {
 
 .apropos {
   height: 80vh;
-  background-color: #f3d1b8;
+  display: flex;
+  align-items: center;
   margin-top: 17vh;
   position: relative;
   overflow: hidden;
-  
+  background: rgb(232,183,160);
+  background: linear-gradient(130deg, rgba(232,183,160,1) 0%, rgba(255,234,209,1) 100%);
+
   .anchor {
     top: -6vh;
     position: absolute;
@@ -265,10 +272,48 @@ body {
     transform-origin: bottom left;
     transform: rotate(90deg);
   }
+
+  .text {
+    width: 35%;
+    position: relative;
+    margin-left: 20%;
+
+    i {
+      position: absolute;
+      top: -110%;
+      left: -15%;
+      font-size: 45vh;
+      font-family: "Palanquin";
+      color: #cd5a50;
+      z-index: 1;
+      opacity: .4;
+    }
+
+    .title {
+      font-size: 3.5vh;
+      // font-family: 'Gelasio';
+      margin-bottom: 5%;
+    }
+
+    .content {
+      font-size: 2.3vh;
+      font-family: "Montserrat";
+      font-style: italic;
+    }
+  }
+
+  .fleur2 {
+    position: absolute;
+    right:0;
+    bottom:5%;
+    opacity: .06;
+    height: 80%;
+  }
+
 }
 
 .contact {
-  height: 80vh;
+  height: 90vh;
   background-color: white;
   position: relative;
 
@@ -276,8 +321,225 @@ body {
     top: -6vh;
     position: absolute;
   }
+
+  .fleur3 {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+  }
+  .content {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .left {
+      width: 65%;
+      height: 100%;
+      padding: 3% 10%;
+      position: relative;
+
+      .title {
+        font-size: 3.5vh;
+        margin-bottom: 2%;
+      }
+
+      .text {
+        font-family: "Montserrat";
+        font-size: 2vh;
+        font-style: italic;
+        width: 80%;
+        margin-bottom: 5%;
+      }
+
+      .formulaire {
+        background-color: white;
+        padding: 4% 4% 2% 4%;
+        box-shadow: 0px 0px 18px -3px rgba(0,0,0,0.2);
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        #contact-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: "Montserrat";
+          font-size: 2vh;
+
+          .label {
+            width: 70%;
+            margin-bottom: 1%;
+          }
+
+          .input {
+            margin-bottom: 4%;
+            width: 70%;
+            border: none;
+            background-color: #eceaea;
+            height: 4vh;
+            border-radius: 5px;
+          }
+
+          .input:focus {
+            outline: none !important;
+          }
+
+          .msg {
+            height: 12vh;
+          }
+
+          .btnBox {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+
+            .send {
+              outline: none !important;
+              background-color: #e0c2a5;
+              border: none;
+              padding: 2% 5%;
+              color: #91745a;
+              border-radius: 25px;
+              transition: .2s;
+            }
+            .send:active {
+              box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                          inset 2px 2px 3px rgba(0, 0, 0, .6);
+            }
+
+            .send:hover {
+              cursor:pointer;
+              background: rgb(232,183,160);
+              color: #fff;
+            }
+
+            .feedback {
+              color: rgb(63, 153, 63);
+              visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width : 35%;
+      height: 100%;
+      background-color: #ffece1;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .grosrezo {
+        color: #cd5a50;
+        font-size: 20vh;
+        font-family: 'Playfair Display SC';
+        position: absolute;
+        top: 3vh;
+        right: 10.5vw;
+        transform-origin: top right;
+        transform: rotate(-90deg);
+      }
+
+      .social {
+        height: 70%;
+        width: 50%;
+        margin-left: 10%;
+        position: relative;
+
+        .line {
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background-color: #91745a;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: .5;
+        }
+
+        .mediaCtn {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          .media {
+            color: #91745a; 
+            background-color: #ffece1;
+            height: 10%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            padding: 0 3%;
+            font-family: "Montserrat";
+            font-size: 80%;
+            transition: .3s;
+
+            i {
+              font-size: 200%;
+              margin-right: 5%;
+            }
+          }
+
+          .media:hover {
+            cursor: pointer;
+            background-color: #e2d2ca;
+          }
+        }
+      }
+    }
+  }
 }
 
+.footer {
+  height: 10vh; 
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-left: 2vw;
+  position: relative;
+
+  .txt {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1.5vh;
+  }
+
+  .up{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2vw;
+    font-size: 4vh;
+    color: white;
+    text-decoration: none;
+
+    a, i {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .up:hover {
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 1800px) {
   .navbar {
     height: 10vh !important;

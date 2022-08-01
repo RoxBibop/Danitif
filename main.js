@@ -1,3 +1,27 @@
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      this.contact_number.value = Math.random() * 100000 | 0;
+      emailjs.sendForm("service_kl4fp5h","template_1rgjuxd", this)
+        .then(function() {
+          console.log('SUCCESS!');
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+      const inputs = document.querySelectorAll(".input");
+      const msg = document.querySelector(".feedback");
+      inputs.forEach(i => {
+        i.value = "";
+      });
+
+      msg.style.visibility = "visible";
+  });
+}
+
+
+
+
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
@@ -17,12 +41,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 (function() {
   // Add event listener
   document.addEventListener("mousemove", parallax);
-  const face = document.querySelector(".face");
   const fleur = document.querySelector(".fleur");
   const apropo = document.querySelector(".grostitre");
+  const rezo = document.querySelector(".grosrezo");
 
 
-  console.log(fleur)
   // Magic happens here
   function parallax(e) {
       let _w = window.innerWidth/2;
@@ -35,18 +58,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       let x = `${_depth3}, ${_depth2}, ${_depth1}`;
 
 
-      // if (((_mouseY - _h) /6) > 0) {
-      //   face.style.bottom = -(_mouseY - _h) /100 + "px"
-      // } else {
-      //   face.style.bottom = 0 + "px"
-      // }
-      // face.style.right = 100 -(_mouseX - _w) /100 + "px"
-
-
       fleur.style.top = 55 + (-(_mouseY - _h) /150) + "%"
       fleur.style.left = 10 + (-(_mouseX - _w) /300) + "%"
 
       apropo.style.top = -20 + (-(_mouseY - _h) /80) + "vh"
+      rezo.style.top = 3 + (-(_mouseY - _h) /30) + "vh"
+
   }
 
 

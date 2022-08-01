@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Palanquin' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
@@ -118,13 +119,98 @@
     <div class="apropos">
       <div class="grostitre">A PROPOS</div>
       <div class="anchor" id="apropos"></div>
+      <div class="text">
+        <i>''</i>
+        <div class="title">- A Propos -</div>
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <br><br>
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+      </div>
+      <img src="./img/fleur2.png" class="fleur2">
     </div>
 
     <div class="contact">
       <div class="anchor" id="contact"></div>
+      <img src="./img/fleur3.png" class="fleur3">
+      <div class="content">
+        <div class="left">
+          <div class="title">- Contact -</div>
+          <div class="text">Pour tout renseignement supplémentaire, ou pour prendre rendez-vous, contactez moi directement par email grâce à ce formulaire, ou sur mes reseaux sociaux !</div>
+
+
+          <div class="formulaire">
+            <form id="contact-form">
+              <input type="hidden" name="contact_number">
+
+              <label class="label">Nom Complet</label>
+              <input class="input" type="text" name="user_name" required>
+
+              <label class="label">Email</label>
+              <input class="input" type="email" name="user_email" required>
+
+              <label class="label">Téléphone ( 0611223344 ) </label>
+              <input class="input" type="tel" name="user_email" pattern="[0-9]{10}" required>
+
+              <label class="label">Message</label>
+              <textarea class="input msg" name="message" required></textarea>
+
+              <div class="btnBox">
+                <div class="feedback">Message envoyé ! Merci !</div>
+                <input class="send" type="submit" value="ENVOYER">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <div class="grosrezo">RESEAUX</div>
+          <div class="social">
+            <div class="line"></div>
+            <div class="mediaCtn">
+              <div class="media">
+                <i class="fa-brands fa-facebook"></i>
+                <div>Facebook.com/danitif</div>
+              </div>
+              <div class="media">
+                <i class="fa-brands fa-instagram"></i>
+                <div>instagram.com/danitif</div>
+              </div>
+              <div class="media">
+                <i class="fa-brands fa-snapchat"></i>
+                <div>snapchat.com/danitif</div>
+              </div>
+              <div class="media">
+                <i class="fa-solid fa-envelope"></i>
+                <div>danitif@danitif.com</div>
+              </div>
+              <div class="media">
+                <i class="fa-solid fa-phone"></i>
+                <div>danitif@danitif.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="footer">
+      <div class="txt">danitif@danitif.com</div>
+      <div class="txt">© 2022 Danitif, All Rights Reserved</div>
+      <div class="up">
+        <a href="#home"><i class="fa-solid fa-circle-up"></i></a>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://kit.fontawesome.com/50248f4fc4.js" crossorigin="anonymous"></script>
     <script src="particles.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('fpbunya-SCcmGjq0W');
+      })();
+  </script>
     <script src="./main.js"></script>
   </body>
 </html>
