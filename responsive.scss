@@ -1,0 +1,251 @@
+:root {
+	--bar-bg: #212529;
+}
+
+@media screen and (max-width: 1800px) {
+  .navbar {
+    height: 10vh !important;
+  }
+
+  .btn {
+    margin-top: 10vh;
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px 20px !important;
+    width: 26% !important;
+
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  body {
+    .navbar {
+      display: none;
+    }
+
+    .burger {
+      display: block;
+      transition: .5s;
+      position: fixed;
+      height: 60px;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 9999;
+      background-color: #fff;
+      border-bottom: 1px solid #b2b2b2;
+      overflow: hidden;
+      // display: flex;
+      // justify-content: space-between;
+      // border-bottom: 1px solid #b2b2b2;
+      // align-items: center;
+
+      img {
+        opacity: .7;
+        position: absolute;
+        height: 40px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .burgerbtn {
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: 10px;
+        border: 1px solid #b2b2b2;
+        margin-right: 20px;
+        position: absolute;
+
+        .stick {
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          background-color: #b2b2b2;
+          margin-left: 10%;
+          transition: .2s;
+        }
+
+        .c1, .c2 {
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          margin-left: 10%;
+          background-color: #b2b2b2;
+          top : 50%;
+          transition: .4s;
+
+        }
+
+        .c1 {
+          transform: scale(0) rotate(-45deg);
+        }
+
+        .c2 {
+          transform: scale(0) rotate(45deg);
+          
+        }
+
+        .s1 {
+          top: 30%;
+        }
+
+        .s2 {
+          bottom: 30%;
+        }
+
+        .s1Active, .s2Active {
+          transform: scale(0);
+        } 
+
+        .c1Active {
+          transform: scale(1) rotate(-45deg);
+        } 
+
+        .c2Active {
+          transform: scale(1) rotate(45deg);
+        } 
+
+      }
+
+      ul  {
+        list-style-type: none;
+        margin-top: 67px;
+        font-size: 20px;
+
+        li, a {
+          text-decoration: none;
+          color: black;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .burgerActive {
+      height: 245px;
+    }
+  }
+
+  .accueil {
+
+    .face {
+      display: none;
+    }
+
+    .context {
+      text-align: center;
+      width: auto;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+
+      .title {
+        font-size: 72px;
+        margin-bottom: 20px;
+      }
+
+      .text {
+        font-size: 20px;
+        margin-top: 80px;
+        font-weight: 900;
+        width: 100%;
+      }
+
+      .btn {
+        width: 160px !important;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .services {
+    height: auto;
+
+    .photos {
+      flex-direction: column;
+      align-items: center;
+
+      .carre {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+
+  .apropos {
+    height: auto;
+
+    .grostitre {
+      display: none;
+    }
+
+    .title {
+      margin-top: 70px;
+      margin-bottom: 50px !important;
+    }
+
+    .text {
+      margin-left: 0;
+      text-align: center;
+      width: 100%;
+      padding: 0 60px;
+      margin-bottom: 100px;
+    }
+  }
+
+  .contact {
+    height: 180vh;
+    overflow: hidden;
+
+    .fleur3 {
+      height: 30%;
+    }
+
+    .content {
+      flex-direction: column;
+
+      .left {
+        width: auto;
+        text-align: center;
+        height: auto;
+
+        .title {
+          width: auto;
+          margin-top: 50px;
+          margin-bottom: 40px;
+        }
+
+        .text {
+          margin: 0;
+          width: auto;
+          margin-bottom: 40px;
+        }
+
+        .formulaire {
+          width: 90%;
+
+        }
+      }
+
+      .right {
+        height: 80vh;
+        width: 90%;
+        margin-bottom: 50px;
+
+        .grosrezo {
+          display: none;
+        }
+
+        .social {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+    }
+  }
+}

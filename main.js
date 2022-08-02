@@ -65,9 +65,41 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       rezo.style.top = 3 + (-(_mouseY - _h) /30) + "vh"
 
   }
-
-
-
-
-
 })();
+
+
+//BgMenu
+
+let btnBurger = document.querySelector(".burgerbtn");
+let links = document.querySelectorAll(".linkmenu");
+let burger = document.querySelector(".burger");
+let s1 = document.querySelector(".s1");
+let s2 = document.querySelector(".s2");
+let c1 = document.querySelector(".c1");
+let c2 = document.querySelector(".c2");
+
+btnBurger.addEventListener("click", () => {
+  s1.classList.toggle("s1Active");
+  s2.classList.toggle("s2Active");
+  c1.classList.toggle("c1Active");
+  c2.classList.toggle("c2Active");
+  burger.classList.toggle("burgerActive");
+})
+
+links.forEach(l => {
+  l.addEventListener("click", () => {
+    s1.classList.toggle("s1Active");
+    s2.classList.toggle("s2Active");
+    c1.classList.toggle("c1Active");
+    c2.classList.toggle("c2Active");
+    burger.classList.toggle("burgerActive");
+  })
+});
+
+
+
+// let homeBtn = document.querySelector(".btntxt");
+
+// homeBtn.addEventListener("click", () => {
+
+// })

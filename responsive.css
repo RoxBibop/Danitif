@@ -1,0 +1,215 @@
+:root {
+  --bar-bg: #212529;
+}
+
+@media screen and (max-width: 1800px) {
+  .navbar {
+    height: 10vh !important;
+  }
+  .btn {
+    margin-top: 10vh;
+    background-color: black;
+    color: #fff;
+    font-size: 17px;
+    padding: 15px 20px !important;
+    width: 26% !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body .navbar {
+    display: none;
+  }
+  body .burger {
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    background-color: #fff;
+    border-bottom: 1px solid #b2b2b2;
+    overflow: hidden;
+  }
+  body .burger img {
+    opacity: .7;
+    position: absolute;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+  }
+  body .burger .burgerbtn {
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #b2b2b2;
+    margin-right: 20px;
+    position: absolute;
+  }
+  body .burger .burgerbtn .stick {
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background-color: #b2b2b2;
+    margin-left: 10%;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  body .burger .burgerbtn .c1, body .burger .burgerbtn .c2 {
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    margin-left: 10%;
+    background-color: #b2b2b2;
+    top: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  body .burger .burgerbtn .c1 {
+    -webkit-transform: scale(0) rotate(-45deg);
+            transform: scale(0) rotate(-45deg);
+  }
+  body .burger .burgerbtn .c2 {
+    -webkit-transform: scale(0) rotate(45deg);
+            transform: scale(0) rotate(45deg);
+  }
+  body .burger .burgerbtn .s1 {
+    top: 30%;
+  }
+  body .burger .burgerbtn .s2 {
+    bottom: 30%;
+  }
+  body .burger .burgerbtn .s1Active, body .burger .burgerbtn .s2Active {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  body .burger .burgerbtn .c1Active {
+    -webkit-transform: scale(1) rotate(-45deg);
+            transform: scale(1) rotate(-45deg);
+  }
+  body .burger .burgerbtn .c2Active {
+    -webkit-transform: scale(1) rotate(45deg);
+            transform: scale(1) rotate(45deg);
+  }
+  body .burger ul {
+    list-style-type: none;
+    margin-top: 67px;
+    font-size: 20px;
+  }
+  body .burger ul li, body .burger ul a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+  }
+  body .burgerActive {
+    height: 245px;
+  }
+  .accueil .face {
+    display: none;
+  }
+  .accueil .context {
+    text-align: center;
+    width: auto;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .accueil .context .title {
+    font-size: 72px;
+    margin-bottom: 20px;
+  }
+  .accueil .context .text {
+    font-size: 20px;
+    margin-top: 80px;
+    font-weight: 900;
+    width: 100%;
+  }
+  .accueil .context .btn {
+    width: 160px !important;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .services {
+    height: auto;
+  }
+  .services .photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .photos .carre {
+    margin-bottom: 50px;
+  }
+  .apropos {
+    height: auto;
+  }
+  .apropos .grostitre {
+    display: none;
+  }
+  .apropos .title {
+    margin-top: 70px;
+    margin-bottom: 50px !important;
+  }
+  .apropos .text {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 60px;
+    margin-bottom: 100px;
+  }
+  .contact {
+    height: 180vh;
+    overflow: hidden;
+  }
+  .contact .fleur3 {
+    height: 30%;
+  }
+  .contact .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .content .left {
+    width: auto;
+    text-align: center;
+    height: auto;
+  }
+  .contact .content .left .title {
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .contact .content .left .text {
+    margin: 0;
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .contact .content .left .formulaire {
+    width: 90%;
+  }
+  .contact .content .right {
+    height: 80vh;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .contact .content .right .grosrezo {
+    display: none;
+  }
+  .contact .content .right .social {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
