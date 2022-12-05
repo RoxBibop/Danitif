@@ -171,6 +171,40 @@
 
       .carre {
         margin-bottom: 50px;
+        
+        .imgsupport {
+
+          .prix {
+            background-color: #f4ded2;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: -100%;
+            transition: .5s;
+            font-family: 'Montserrat';
+            font-size: 20px;
+
+            .prixTitle {
+              margin-bottom: 10px;
+              font-size: 75%;
+              font-weight: 900;
+            }
+
+            .knotless {
+              margin-top: 22px;
+            }
+
+            li {
+              font-size: 70%;
+              margin-bottom: 5px;
+              margin-left: 20px;
+
+              .taillePrix {
+                font-weight: 900;
+              }
+            }
+          }
+        }
       }
     }
 

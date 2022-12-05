@@ -251,6 +251,15 @@ body .navbar ul a:hover::after {
   -webkit-transition: .5s;
   transition: .5s;
   font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.services .photos .carre .imgsupport .prix .prixTitle {
+  margin-bottom: 11px;
+}
+
+.services .photos .carre .imgsupport .prix .knotless {
+  margin-top: 22px;
 }
 
 .services .photos .carre .imgsupport .prix ul {
@@ -267,6 +276,15 @@ body .navbar ul a:hover::after {
           justify-content: space-between;
   font-size: 80%;
   margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.services .photos .carre .imgsupport .prix li .taille {
+  font-style: italic;
+}
+
+.services .photos .carre .imgsupport .prix li .taillePrix {
+  font-weight: 900;
 }
 
 .services .photos .carre .imgsupport:hover .prix {
@@ -340,7 +358,7 @@ body .navbar ul a:hover::after {
 
 .apropos .text i {
   position: absolute;
-  top: -110%;
+  top: -75%;
   left: -15%;
   font-size: 45vh;
   font-family: "Palanquin";
@@ -595,6 +613,11 @@ body .navbar ul a:hover::after {
 .contact .content .right .social .mediaCtn .media i {
   font-size: 200%;
   margin-right: 5%;
+}
+
+.contact .content .right .social .mediaCtn .media a {
+  text-decoration: none;
+  color: #91745a;
 }
 
 .contact .content .right .social .mediaCtn .media:hover {

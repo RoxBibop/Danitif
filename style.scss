@@ -204,6 +204,15 @@ body {
           bottom: -100%;
           transition: .5s;
           font-family: 'Montserrat';
+          font-size: 20px;
+
+          .prixTitle {
+            margin-bottom: 11px;
+          }
+
+          .knotless {
+            margin-top: 22px;
+          }
 
           ul {
             padding: 0;
@@ -215,6 +224,15 @@ body {
             justify-content: space-between;
             font-size: 80%;
             margin-bottom: 10px;
+            margin-left: 20px;
+
+            .taille {
+              font-style: italic;
+            }
+
+            .taillePrix {
+              font-weight: 900;
+            }
           }
         }
       }
@@ -284,7 +302,7 @@ body {
 
     i {
       position: absolute;
-      top: -110%;
+      top: -75%;
       left: -15%;
       font-size: 45vh;
       font-family: "Palanquin";
@@ -480,7 +498,7 @@ body {
           flex-direction: column;
           justify-content: space-around;
           align-items: center;
-
+          
           .media {
             color: #91745a; 
             background-color: #ffece1;
@@ -497,12 +515,18 @@ body {
               font-size: 200%;
               margin-right: 5%;
             }
+
+            a {
+              text-decoration: none;
+              color: #91745a; 
+            }
           }
 
           .media:hover {
             cursor: pointer;
             background-color: #e2d2ca;
           }
+          
         }
       }
     }

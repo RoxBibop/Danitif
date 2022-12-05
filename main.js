@@ -3,7 +3,7 @@ window.onload = function() {
       event.preventDefault();
 
       this.contact_number.value = Math.random() * 100000 | 0;
-      emailjs.sendForm("service_kl4fp5h","template_1rgjuxd", this)
+      emailjs.sendForm("service_ljngroc","template_1rgjuxd", this)
         .then(function() {
           console.log('SUCCESS!');
         }, function(error) {
