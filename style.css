@@ -35,7 +35,7 @@ body .navbar {
 }
 
 body .navbar .img {
-  height: 75%;
+  height: 100%;
   position: absolute;
   left: 10px;
 }
@@ -91,9 +91,9 @@ body .navbar ul a:hover::after {
 
 .accueil .face {
   position: absolute;
-  height: 85%;
-  bottom: 0;
-  right: 6%;
+  height: 90%;
+  bottom: -10%;
+  right: 0%;
   z-index: 0;
 }
 
@@ -623,6 +623,10 @@ body .navbar ul a:hover::after {
 .contact .content .right .social .mediaCtn .media:hover {
   cursor: pointer;
   background-color: #e2d2ca;
+}
+
+.contact .content .right .social .mediaCtn .email:hover, .contact .content .right .social .mediaCtn .telephone:hover {
+  cursor: default;
 }
 
 .footer {
